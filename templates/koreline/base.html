@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    {% load staticfiles %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Koreline</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/normalize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'css/main.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <nav>
+        {% include 'koreline/navbar.html' %}
+    </nav>
+{% block content %}{% endblock %}
+</body>
+</html>

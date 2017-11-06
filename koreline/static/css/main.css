@@ -1,3 +1,36 @@
-html {
-    color: red;
+/* GLOBAL */
+
+/* END GLOBAL /*
+
+
+/* NAVBAR */
+
+nav {
+  background: linear-gradient(90deg, #9426b2 0%, #ff6a3b 100%);
+}
+
+nav .brand-logo {
+  margin-left: 10px;
+}
+
+nav .nav-link {
+  font-weight: 500;
+}
+
+/* END NAVBAR */
+
+.streamer {
+  position: relative;
+  background: url("/static/img/streamer_background.jpg");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: calc(100vh - 64px);
+  align-items: center;
+}
+
+.streamer-content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
 }
